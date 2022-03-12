@@ -24,8 +24,13 @@
 
 ---------
 
+답은 4, 3입니다!   
+저는 오버워치, 배그, 하스 등등 다양한 게임을 하는데 유독 롤은 안끌려서 한번도 해본적이 없습니다...   
+그리고 저는 카페가면 그린티종류 랑 커피만 먹을정도로 그린티를 좋아하고, 아이폰8, 에어팟프로, 애플워치, 아이패드, 애플펜슬까지 다있는 앱등이입니다.   맥북사고싶어요...   
+저는 안암에서 자취하고있고, 술은 주는대로 잘 먹습니다..ㅎㅎ
 
 
-[likelion!](https://next-likelion.co.kr/)
+친구가 그려준 저입니다 ㅎㅎ..
+![This is an image](./pic.jpg)
 
-![This is an image](https://t1.daumcdn.net/cfile/blog/274D2A4E53D7A46B2C)
++[likelion!](https://next-likelion.co.kr/)
