@@ -1,13 +1,31 @@
 
-안녕하세요.
-next_likelion 10기에 들어왔습니다.
-열심히하겠습니다.
-#전기전자공학부 22학번 전성운입니다.
-##사자좋아합니다
-감사합니다
-yeah 123
-12312ㅇㅇㅇ
+안녕하세요. 전성운의 README입니다.
+### TMI많이 투척하겠습니다   
 
-This site was built using [likelion!](https://next-likelion.co.kr/)
+## 3 Truth 1 Lie (게임)   
 
-![This is an image](https://www.urbanbrush.net/web/wp-content/uploads/edd/2020/11/urbanbrush-20201104100055512700.jpg)
+여기서 거짓말은??
+
+1. 나는 중학교때 인생을 오버워치에 갈아넣었다.
+2. 나는 배그 272시간을 나온지 1년동안 했다.    
+3. 나는 하스스톤을 등급전 1648승, 전장 200승을 했다.
+4. 나는 롤 골드다.
+
+
+## 3 Truth 1 Lie (그외)
+
+여기서 거짓말은??
+
+1. 나는 녹차를 좋아한다.   
+2. 나는 앱등이다.   
+3. 나는 술을 안마신다.   
+4. 나는 안암에서 자취를한다.   
+
+
+---------
+
+
+
+[likelion!](https://next-likelion.co.kr/)
+
+![This is an image](https://t1.daumcdn.net/cfile/blog/274D2A4E53D7A46B2C)
