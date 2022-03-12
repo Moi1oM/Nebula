@@ -5,8 +5,8 @@ next_likelion 10기에 들어왔습니다.
 #전기전자공학부 22학번 전성운입니다.
 ##사자좋아합니다
 감사합니다
-yeah
-12312
+yeah 123
+12312ㅇㅇㅇ
 
 This site was built using [likelion!](https://next-likelion.co.kr/)
 
