@@ -1,0 +1,49 @@
+/*
+*{
+    background:linear-gradient(gray,white);
+}*/
+
+body{
+    background-image: url(https://img.freepik.com/free-photo/simple-product-backdrop-with-blank-space_53876-104161.jpg?size=626&ext=jpg);
+    background-repeat : no-repeat;
+    background-size : cover;
+    text-align: center;
+}
+.selection{
+    font-weight: 900;
+    font-size: large;
+}
+.words{
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+}
+.profile-user-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 70%;
+    overflow: hidden; 
+    text-align: center;
+    float: left;
+  }
+
+  .profile-user-img-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    float: left;
+  }
+  .caution{
+    text-align: center;
+    border-top: 200px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: red;
+  }
+  .here{
+    margin: 50px 50px;
+  }
+  .solved{
+      float: left;
+  }
