@@ -1,0 +1,131 @@
+.time{
+    padding: 10px 330px 10px 10px;
+}
+.container1{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container2{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container3{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container4_0{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container4_1{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container4_2{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container4_3{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container5{
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.material-icons{
+    padding: 10px;
+}
+.name{
+    padding-left: 130px;
+    padding-right: 130px;
+    font-size: 18px;
+}
+.pic{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 15px;
+    margin-right: 50px;
+    float: left;
+}
+.container6{
+    position: relative;
+}
+.profile3{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    z-index: 3;
+    position: absolute;
+    left: 10px;
+}
+.profile2{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    z-index: 2;
+    position: absolute;
+    left: 30px;
+}
+.profile1{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    z-index: 1;
+    position: absolute;
+    left: 50px;
+}
+.name2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.follow{
+    font-size: 16px;
+    left: 80px;
+    padding-left: 100px;
+}
+.container7{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container10{
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid black;
+    background-color: white;
+}
+.item7_2{
+    padding-top: 11px;
+    padding-bottom: 12px;
+    border: 1px solid black;
+    border-radius: 5%;
+    margin-right: 10px;
+}
+.item7_1{
+    border: 1px solid black;
+    border-radius: 5%;
+    padding-left:80px;
+    margin-right: 10px;
+}
+.item7_3{
+    border: 1px solid black;
+    border-radius: 10%;
+}
+.post{
+    width: 165px;
+    height: 165px;
+}
