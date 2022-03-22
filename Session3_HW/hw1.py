@@ -13,8 +13,8 @@
 어려우시면 운영진에게 언제든 물어보세요~
 """
 
-count2=1
-count1=1
+count2=0
+count1=0
 while True:
     n=int(input())
     if(n==-1):
