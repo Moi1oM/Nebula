@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'count.css' %}?after">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="give_border">
+        <h1>글자를 입력해라!</h1>
+        <form action="{% url 'result' %}" method="POST">
+            {% csrf_token %}
+            <textarea name="text" cols="30" rows="12"></textarea>
+            <br />
+            <input type="submit" value="제출" />
+        </form>
+    </div>
+</body>
+
+</html>

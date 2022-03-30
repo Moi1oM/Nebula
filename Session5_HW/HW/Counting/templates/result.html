@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}?after">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align:center;">헛소리하지마 인마</h1>
+    <img src="https://i.ytimg.com/vi/3fUfJ2zsK1Y/hqdefault.jpg">
+    <table border="1" bordercolor="salmon" width="500" height="300" align="center">
+        <tr>
+            <td rowspan="1" align="center" bgcolor="red" span style="color:black"">공백포함</td>
+            <td align=" center" bgcolor="orange" span style="color:black">{{total_len}}자</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="yellow" span style="color:black">공백 빼고</td>
+            <td align="center" bgcolor="green" span style="color:black">{{no_blank_len}}자</td>
+
+        </tr>
+        <tr>
+            <td colspan="3" span style="color:black" align="center" bgcolor="blue">단어개수: {{word_count}}</td>
+        </tr>
+        <tr>
+            <td colspan="3" span style="color:black" align="center" bgcolor="purple">원문: {{text}}</td>
+        </tr>
+    </table>
+    <form action="{% url 'count' %}" method="POST" style="text-align:center;">
+        {% csrf_token %}
+        <input type="submit" value="돌아가기" />
+    </form>
+
+</body>
+
+</html>
