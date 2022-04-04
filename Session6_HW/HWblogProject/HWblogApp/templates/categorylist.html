@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <link rel="styelsheet" type="text/css" href="{% static 'categorylist.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body style="background-image: url('https://previews.123rf.com/images/roystudio/roystudio1502/roystudio150200127/37085000-%EA%B5%AC%EA%B2%A8%EC%A7%84-%EC%A2%85%EC%9D%B4-%EB%B0%B0%EA%B2%BD-%EC%A7%88%EA%B0%90.jpg');
+background-repeat : no-repeat;
+background-size : cover;">
+    <div class="up">
+        <span>이웃블로그|블로그 홈|</span><span><a href="{% url 'list' %}">내 메뉴</a></span><span>|전성운|</span>
+        <span class="material-icons">apps</span>
+    </div>
+    <h2>hcloud0806의 블로그입니다~</h2>
+
+    <div class="leftbar" style="border-right: 1px solid black;
+    text-align: center; float:left;
+    width: 140px;">
+        <div class="list">
+            <span>글 카테고리</span><br>
+            <span><a href="{% url 'hobby' %}">취미</a></span><br>
+            <span><a href="{% url 'food' %}">음식</a></span><br>
+            <span><a href="{% url 'programming' %}">프로그래밍</a></span>
+        </div>
+        <p>카테고리글개수:{{articles|length}}</p>
+        <button type="button" class="navyBtn" onClick="location.href='{% url 'new' %}'">글쓰러가기</button>
+        <br>
+        <a href="https://www.instagram.com/wjstjddns02/"><img style="width:50px; height:50px;"
+                src="https://cdn-icons-png.flaticon.com/512/87/87390.png"></a>
+        <a href="https://github.com/"><img style="width:50px; height:50px;"
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></a>
+        <br>
+
+        <a href="{% url 'list' %}">글 전체 목록 가기</a>
+    </div>
+    <div class="titles" style="float:left;">
+        <ul>
+            {% for article in articles %}
+            <li><a href="{% url 'detail' article.id %}">{{article.title}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+
+</html>

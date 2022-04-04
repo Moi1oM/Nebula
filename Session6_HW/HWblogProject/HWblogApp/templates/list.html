@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'list.css' %}?after">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="up">
+        <span>이웃블로그|블로그 홈|</span><span><a href="{% url 'list' %}">내 메뉴</a></span><span>|전성운|</span>
+        <span class="material-icons">apps</span>
+    </div>
+    <h2>hcloud0806의 블로그입니다~</h2>
+
+    <div class="leftbar" style="border-right: 1px solid black;
+    text-align: center; float:left;
+    width: 140px;">
+        <div class="list">
+            <span>글 카테고리</span><br>
+            <span><a href="category/hobby">취미</a></span><br>
+            <span><a href="category/food">음식</a></span><br>
+            <span><a href="category/programming">프로그래밍</a></span>
+        </div>
+        <p>전체 글 개수:{{articles|length}}</p>
+        <button type="button" class="navyBtn" onClick="location.href='{% url 'new' %}'">글쓰러가기</button>
+        <br>
+        <a href="https://www.instagram.com/wjstjddns02/"><img style="width:50px; height:50px;"
+                src="https://cdn-icons-png.flaticon.com/512/87/87390.png"></a>
+        <a href="https://github.com/"><img style="width:50px; height:50px;"
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></a>
+    </div>
+    <div class="titles" style="float:left;">
+        <ul>
+            {% for article in articles %}
+            <li><a href="detail/{{article.pk}}">{{article.title}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+
+</html>
