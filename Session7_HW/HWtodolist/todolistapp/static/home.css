@@ -1,0 +1,18 @@
+.gakgak {
+  border: 1px solid black;
+  width: 200px;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+body {
+  background-image: url("https://mblogthumb-phinf.pstatic.net/MjAxNzAxMDRfMTQx/MDAxNDgzNDk0Njc3ODg3.RXt6nrbOhQZ_cqA41LX2nOfYd7sa8hDIRBNIhUGh09Yg.si7jT0QuPzIHQH8tQimGtz4t1Yi26byf9kdRlyW0pY8g.JPEG.designmaeg/%EB%B0%A4%ED%95%98%EB%8A%98_001.jpg?type=w2");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
