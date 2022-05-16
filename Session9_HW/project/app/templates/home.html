@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CRUD</h1>
+    <div>
+      <ul>
+        {% for post in posts %}
+        <li>
+          <a href="{% url 'detail' post.pk %}">{{post.title}}</a>
+          <span>조회수:{{post.click}}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <a href="{% url 'new' %}">글쓰러가기</a>
+    <br /><br /><br />
+    <p>이런!</p>
+    <p>멋사과제+학교과제에 치여서 css는 증발해버렸습니다!</p>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+      ,
+      style="width: 300px; height: 300px"
+    />
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/5118/5118964.png"
+      ,
+      style="width: 300px; height: 300px"
+    />
+  </body>
+</html>
