@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% block css %} {% endblock css %}
+  </head>
+  <body>
+    <div class="title">{% block title %} {% endblock title %}</div>
+    <div class="content">{% block content %} {% endblock content %}</div>
+    <footer style="background-color: #45a1ff;
+    color: #fff; width:600px; position: fixed;  
+    bottom: 0;
+    ">
+    <p>Copyright © 2022 sungwun.home.,Ltd. All rights reserved.</p>
+    <address>Contact instagram: @wjstjddns02 for more information. 010-1234-5678</address>
+</footer>
+  </body>
+</html>
