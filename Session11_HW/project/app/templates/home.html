@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block css %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'home.css' %}" />
+{% endblock css %} {% block content %}
+<section id="home">
+  <ul>
+    {% for post in posts %}
+    <li>
+      <a href="{% url 'detail' post.pk %}">{{ post.title }}</a>
+      <span>조회수:{{post.click}}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  <br />
+  <br />
+  <br />
+  <p>이런!</p>
+  <p>멋사과제+학교과제에 치여서 css는 증발해버렸습니다!</p>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+    ,
+    style="width: 300px; height: 300px"
+  />
+  <img
+    src="https://cdn-icons-png.flaticon.com/512/5118/5118964.png"
+    ,
+    style="width: 300px; height: 300px"
+  />
+  {% endblock content %}
+</section>

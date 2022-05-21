@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}{% load socialaccount %}{% providers_media_js %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block css %} {% endblock %}
+    <title>NEXT-LIKELION</title>
+  </head>
+  <body>
+    <nav id="navbar">
+        <h2><a href="{% url 'home' %}">CRUD</a></h2>
+        <a href="{% url 'new' %}">New</a>
+        <a href="{% url 'home' %}">Home</a>
+        {% if user.is_authenticated %}
+        <span>{{user.username}}의 소중한 CRUD!</span>
+        <a href="{% url 'logout' %}">로그아웃</a>        
+        {% else %}
+        <a href="{% url 'login' %}">로그인</a>
+        <form
+          class="login"
+          method="POST"
+          action="{% provider_login_url 'kakao' %}"
+        >
+          {%csrf_token%}{{form.as_p}}{%if redirect_field_value%}
+          <input
+            type="hidden"
+            name="{{redirect_field_name}}"
+            value="{{redirect_field_value}}"
+          />
+
+          {% endif %}
+          <button class="primaryAction" type="submit">카카오로그인</button>
+    </form>
+        <a href="{% url 'signup' %}">회원가입하기</a>
+        {% endif %}
+      </ul>
+    </nav>
+
+    {% block title %} {% endblock %} {% block content %} {% endblock content %}
+  </body>
+</html>
