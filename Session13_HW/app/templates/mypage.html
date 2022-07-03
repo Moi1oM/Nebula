@@ -1,0 +1,57 @@
+{% extends 'base.html' %} {% block content %}
+<div>
+  좋아요 누른 글
+  <div>
+    <p>좋아요 누른 글만 표시합시다</p>
+  </div class="like" id="like">
+    {% for like in likes %}
+      <div>
+        <ul>
+          <li>
+            <p>{{like.post.title}}</p>
+          </li>
+        </ul>
+      </div>
+    {% endfor %}
+  <div>
+  </div>
+</div>
+<div>
+  찜하기 누른 글
+  <div>
+    <p>찜하기 누른 글만 표시합시다</p>
+    <div class="scrap" id="scrap">
+      {% for scrap in scraps %}
+      <div>
+        <ul>
+          <li>
+            <p>{{scrap.post.title}}</p>
+          </li>
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!-- <script>
+  const likelike = document.getElementById("like");
+  const scrapscrap = document.getElementById("scrap");
+  function get_likelist() {
+    let paintList = []
+    axios.get("/get_like")
+        .then((response) => {
+        likelist = response.data.likelist;
+        console.log('likelist', likelist);
+        likelist.forEach((item) =>{
+        let template = `<div>${item.title}</div>`
+            paintList.push(template)
+        })
+        console.dir(paintList)
+        finished.innerHTML = paintList.join('')
+        })
+        .catch(function (error) {
+        console.log(error);
+        });
+  }
+</script> -->
+{% endblock content %}
